@@ -38,7 +38,7 @@ class Command(BaseCommand):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.site, _ = Site.objects.get_or_create(name='edX', defaults={
-            'domain': 'localhost:18381'
+            'domain': '183.88.226.254:18381'
         })
         self.partner, _ = Partner.objects.get_or_create(name="edX", defaults={
             'short_code': 'edx',

@@ -135,7 +135,7 @@ DATABASES = {
         'NAME': 'discovery',
         'USER': 'discov001',
         'PASSWORD': 'password',
-        'HOST': 'localhost',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'HOST': '183.88.226.254',  # Empty for 183.88.226.254 through domain sockets or '127.0.0.1' for 183.88.226.254 through TCP.
         'PORT': '',  # Set to empty string for default.
         'ATOMIC_REQUESTS': False,
     },
@@ -144,7 +144,7 @@ DATABASES = {
         'NAME': 'discovery',
         'USER': 'discov001',
         'PASSWORD': 'password',
-        'HOST': 'localhost',
+        'HOST': '183.88.226.254',
         'PORT': '',
         'ATOMIC_REQUESTS': False,
     },
@@ -569,7 +569,7 @@ CORS_ORIGIN_WHITELIST = []
 CSRF_COOKIE_SECURE = False
 ELASTICSEARCH_CLUSTER_URL = "http://127.0.0.1:9200/"
 EMAIL_BACKEND = "django_ses.SESBackend"
-EMAIL_HOST = "localhost"
+EMAIL_HOST = "183.88.226.254"
 EMAIL_HOST_PASSWORD = ""
 EMAIL_HOST_USER = ""
 EMAIL_PORT = 25
@@ -652,7 +652,7 @@ FIRE_UPDATE_COURSE_SKILLS_SIGNAL = False
 
 FIRE_UPDATE_PROGRAM_SKILLS_SIGNAL = False
 
-DISCOVERY_BASE_URL = "http://localhost:18381"
+DISCOVERY_BASE_URL = "http://183.88.226.254:18381"
 
 PRODUCT_API_URL = ''
 

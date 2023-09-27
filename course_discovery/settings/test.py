@@ -78,7 +78,7 @@ CELERY_TASK_IGNORE_RESULT = True
 results_dir = tempfile.TemporaryDirectory()
 CELERY_RESULT_BACKEND = f'file://{results_dir.name}'
 
-CELERY_BROKER_URL = 'memory://localhost/'
+CELERY_BROKER_URL = 'memory://183.88.226.254/'
 
 ################################### END CELERY ###################################
 

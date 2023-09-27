@@ -91,13 +91,13 @@ If you're using `devstack`_, OAuth2 should be configured for you. If you need to
 
 .. _devstack: https://github.com/openedx/devstack
 
-A new OAuth 2.0 client can be created at ``http://localhost:18000/admin/oauth2_provider/application/``.
+A new OAuth 2.0 client can be created at ``http://183.88.226.254:18000/admin/oauth2_provider/application/``.
 
     1. Click the :guilabel:`Add Application` button.
     2. Leave the user field blank.
     3. Specify the name of this service, ``credentials``, as the client name.
-    4. Set the :guilabel:`URL` to the root path of this service: ``http://localhost:8150/``.
-    5. Set the :guilabel:`Redirect URL` to the complete endpoint: ``http://localhost:18150/complete/edx-oauth2/``.
+    4. Set the :guilabel:`URL` to the root path of this service: ``http://183.88.226.254:8150/``.
+    5. Set the :guilabel:`Redirect URL` to the complete endpoint: ``http://183.88.226.254:18150/complete/edx-oauth2/``.
     6. Copy the :guilabel:`Client ID` and :guilabel:`Client Secret` values. They will be used later.
     7. Select :guilabel:`Confidential` as the client type.
     8. Select :guilabel:`Authorization code` as the authorization grant type.
@@ -108,8 +108,8 @@ You can create a new OAuth 2.0 application on the LMS at ``/admin/oauth2_provide
     1. Click the ``Add Application`` button.
     2. Leave the user field blank.
     3. Specify the name of this service, ``discovery``, as the client name.
-    4. Set the ``URL`` to the root path of this service: ``http://localhost:18381``.
-    5. Set the ``Redirect URL`` to the complete endpoint: ``http://localhost:18381/complete/edx-oauth2/``.
+    4. Set the ``URL`` to the root path of this service: ``http://183.88.226.254:18381``.
+    5. Set the ``Redirect URL`` to the complete endpoint: ``http://183.88.226.254:18381/complete/edx-oauth2/``.
     6. Copy the ``Client ID`` and ``Client Secret`` values. They will be used later.
     7. Select ``Confidential (Web applications)`` as the client type.
     8. Select ``Authorization code`` as the authorization grant type.

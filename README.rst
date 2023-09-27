@@ -79,7 +79,7 @@ edx.devstack.memcached container is up and run:
 
 .. code-block:: shell
 
-    $ telnet localhost 11211
+    $ telnet 183.88.226.254 11211
     $ flush_all
     $ quit
 

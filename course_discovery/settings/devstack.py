@@ -14,11 +14,11 @@ LOGGING['handlers']['local'] = {
 INTERNAL_IPS = ('127.0.0.1',)
 
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:8734',  # frontend-app-learner-portal-enterprise
-    'http://localhost:1991',  # frontend-app-admin-portal
-    'http://localhost:18400',  # frontend-app-publisher
-    'http://localhost:18450',  # frontend-app-support-tools
-    'http://localhost:2000',  # frontend-app-learning
+    'http://183.88.226.254:8734',  # frontend-app-learner-portal-enterprise
+    'http://183.88.226.254:1991',  # frontend-app-admin-portal
+    'http://183.88.226.254:18400',  # frontend-app-publisher
+    'http://183.88.226.254:18450',  # frontend-app-support-tools
+    'http://183.88.226.254:2000',  # frontend-app-learning
 )
 
 ELASTICSEARCH_DSL['default']['hosts'] = 'edx.devstack.elasticsearch710:9200'
@@ -31,7 +31,7 @@ SOCIAL_AUTH_REDIRECT_IS_HTTPS = False
 
 JWT_AUTH.update({
     'JWT_SECRET_KEY': 'lms-secret',
-    'JWT_ISSUER': 'http://localhost:18000/oauth2',
+    'JWT_ISSUER': 'http://183.88.226.254:18000/oauth2',
     'JWT_AUDIENCE': None,
     'JWT_VERIFY_AUDIENCE': False,
     'JWT_PUBLIC_SIGNING_JWK_SET': (
@@ -42,7 +42,7 @@ JWT_AUTH.update({
     ),
     'JWT_ISSUERS': [{
         'AUDIENCE': 'lms-key',
-        'ISSUER': 'http://localhost:18000/oauth2',
+        'ISSUER': 'http://183.88.226.254:18000/oauth2',
         'SECRET_KEY': 'lms-secret',
     }],
 })
@@ -53,7 +53,7 @@ MEDIA_ROOT = root('media')
 # LOCAL_MEDIA_URL was added to support external services like edx-mktg retrieving
 # static files in DEBUG and local Devstack
 LOCAL_DISCOVERY_MEDIA_URL = '/media/'
-MEDIA_URL = 'http://localhost:18381' + LOCAL_DISCOVERY_MEDIA_URL
+MEDIA_URL = 'http://183.88.226.254:18381' + LOCAL_DISCOVERY_MEDIA_URL
 # END MEDIA CONFIGURATION
 
 DEFAULT_PARTNER_ID = 1
@@ -73,10 +73,10 @@ PARLER_LANGUAGES = {
      }
 }
 
-SOCIAL_AUTH_EDX_OAUTH2_ISSUER = "http://localhost:18000"
+SOCIAL_AUTH_EDX_OAUTH2_ISSUER = "http://183.88.226.254:18000"
 SOCIAL_AUTH_EDX_OAUTH2_URL_ROOT = "http://edx.devstack.lms:18000"
-SOCIAL_AUTH_EDX_OAUTH2_PUBLIC_URL_ROOT = "http://localhost:18000"
-SOCIAL_AUTH_EDX_OAUTH2_LOGOUT_URL = "http://localhost:18000/logout"
+SOCIAL_AUTH_EDX_OAUTH2_PUBLIC_URL_ROOT = "http://183.88.226.254:18000"
+SOCIAL_AUTH_EDX_OAUTH2_LOGOUT_URL = "http://183.88.226.254:18000/logout"
 
 BACKEND_SERVICE_EDX_OAUTH2_PROVIDER_URL = "http://edx.devstack.lms:18000/oauth2"
 

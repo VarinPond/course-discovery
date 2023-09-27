@@ -1,6 +1,6 @@
 import os
 
-ELASTICSEARCH_DSL = {'default': {'hosts': os.environ.get('TEST_ELASTICSEARCH_URL', 'localhost:9200')}}
+ELASTICSEARCH_DSL = {'default': {'hosts': os.environ.get('TEST_ELASTICSEARCH_URL', '183.88.226.254:9200')}}
 # We use the RealtimeSignalProcessor here to ensure that our index is
 # updated, so that we can search for data that we create in our tests.
 ELASTICSEARCH_DSL_SIGNAL_PROCESSOR = 'course_discovery.apps.course_metadata.search_indexes.signals.RealTimeSignalProcessor'
